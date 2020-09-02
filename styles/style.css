@@ -6,14 +6,10 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family:  Arial, sans-serif;
+  font-family: "Helvetica Neue", 'Arial', sans-serif;
 
   position: relative;
 }
-
-/* section, h1, h2, div {
-  border: 1px solid red;
-} */
 
 /* .header  */
 
@@ -46,6 +42,7 @@
   left: 64px;
   z-index: 2;
 
+  margin: 0;
   width: 388px;
 
   font-size: 18px;
@@ -215,8 +212,9 @@
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
-  margin-top: 20px;
+  margin: 20px 0 0;
 }
+
 
 .table__cell_theme_dark {
   width: 200px;
