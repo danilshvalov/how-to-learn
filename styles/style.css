@@ -11,6 +11,12 @@
   position: relative;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* .header  */
 
 
@@ -28,12 +34,13 @@
 .header__title {
   margin: 0 0 0 64px;
   width: 730px;
+  z-index: 2;
 
   align-self: center;
 
   font-size: 102px;
   line-height: 96px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .header__subtitle {
@@ -46,7 +53,7 @@
   width: 388px;
 
   font-size: 18px;
-  line-height: 18px;
+  line-height: 25px;
   font-weight: normal;
 }
 
@@ -78,9 +85,6 @@
 /* .logo  */
 
 .logo {
-  width: 183px;
-  height: 32px;
-
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -92,54 +96,37 @@
   left: 64px;
   z-index: 2;
 
+  width: 183px;
+  height: 32px;
+
   background-image: url('../images/logo_place_header.svg');
 }
 
 .logo_place_footer {
+  width: 183px;
+  height: 35px;
+
   background-image: url('../images/logo_place_footer.svg');
 }
 
+/* .description */
 
-/* .flex  */
-
-.flex-row {
+.description {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.flex-row_centered {
   justify-content: center;
-}
-
-.flex-row_reversed {
-  flex-direction: row-reverse;
-}
-
-.flex-row_space_bottom {
-  margin-bottom: 100px;
-}
-
-.flex-row_space_top {
   margin-top: 100px;
 }
 
-.flex-column {
+
+/* .digits  */
+
+.digits {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   flex-direction: column;
-}
-
-.flex-column_centered {
+  align-items: center;
   justify-content: center;
+  margin: 100px 0;
 }
-
-.flex-column_reversed {
-  flex-direction: column-reverse;
-}
-
 
 /* .two-columns */
 
@@ -182,11 +169,9 @@
 }
 
 .two-columns__span-accent {
-  display: inline-block;
-
   font-size: 24px;
   line-height: 34px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 /* .table */
@@ -206,7 +191,7 @@
 .table__heading {
   font-size: 24px;
   line-height: 1.15;
-  font-weight: bolder;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -228,7 +213,7 @@
   color: white;
   font-size: 24px;
   line-height: 1.15;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .table__text_theme_dark {
@@ -245,7 +230,7 @@
 
   font-size: 60px;
   line-height: 1.15;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
 
   margin: 0 0 20px;
@@ -266,7 +251,7 @@
   color: #fff;
   font-size: 60px;
   line-height: 69px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .section-subtitle_theme_dark {
@@ -289,6 +274,12 @@
   background-size: 867px 637px;
   background-repeat: no-repeat;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 100px;
+
   height: 790px;
 }
 
@@ -297,10 +288,10 @@
 
   font-size: 120px;
   line-height: 1.15;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
 
-  margin: 100px 0 0;
+  margin: 0;
 }
 
 .feynman__subtitle {
@@ -328,6 +319,9 @@
 /* .kaufman  */
 
 .kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   position: relative;
   overflow: hidden;
@@ -340,6 +334,7 @@
 
 .kaufman__triangle {
   background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
 
   width: 877px;
   height: 877px;
@@ -370,48 +365,54 @@
   width: 90%;
 }
 
-.footer_column {
+.footer__column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.footer_column_content_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   justify-content: space-between;
 }
 
-.footer_author {
+.footer__author {
   margin: 18px 0;
 }
 
-.footer_column_content_info {
+.footer__column-links {
+  margin: 0 0 16px 0;
+  padding: 0;
+}
 
+.footer__column_content_info {
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
+  margin: 0 0 10px 0;
 
   font-size: 18px;
   line-height: 30px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .footer__link {
   display: block;
   color: white;
   text-decoration: none;
-  margin-bottom: 10px;
+
+  margin: 0 0 10px 0;
+  padding: 0;
 
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
 }
 
-.footer_column_content_social {
+.footer__column_content_social {
   justify-self: flex-end;
 }
 
