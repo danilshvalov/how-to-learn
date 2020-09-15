@@ -1,0 +1,9 @@
+.footer__link_icon_facebook::before {
+  content: '';
+  background-image: url('../../../../images/facebook_color_white.svg');
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 10px;
+}
