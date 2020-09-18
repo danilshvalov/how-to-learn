@@ -1,7 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/root/root.css);
 
-@import url(../blocks/fonts/_helvetica-neue/fonts_helvetica-neue.css);
+@import url(../fonts/_helvetica-neue/fonts_helvetica-neue.css);
 
 @import url(../blocks/description/description.css);
 @import url(../blocks/digits/digits.css);
