@@ -1,8 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/root/root.css);
 
-@import url(../blocks/fonts/_noto-sans/fonts_noto-sans.css);
-@import url(../blocks/fonts/_gt-eetsi-pro/fonts_gt-eetsi-pro.css);
 @import url(../blocks/fonts/_helvetica-neue/fonts_helvetica-neue.css);
 
 @import url(../blocks/description/description.css);
